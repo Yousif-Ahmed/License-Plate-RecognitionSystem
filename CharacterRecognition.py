@@ -74,7 +74,7 @@ def preProcessPlate(img):
     # of the rectangle to be detected.
     # A smaller value like (10, 10) will detect
     # each word instead of a sentence.
-    rect_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (25, 75))
+    rect_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (15, 60))
 
     # Applying dilation on the threshold image
     dilation = cv2.dilate(thresh1, rect_kernel, iterations = 1)
@@ -123,6 +123,7 @@ def recognizeChar(img):
     score = score[0][index]
     return predicted,score
 
+i=0
 def readPlate(image):
     plateImage=resizePlate(image)  
     preprocessed=preProcessPlate(plateImage)
