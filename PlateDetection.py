@@ -118,7 +118,6 @@ def plateDetection(edge_img , img ):
                     plates.append(plate)
     #writing plate in scannedplates file                     
     for i, plate in enumerate(plates):
-        show_images([plate],"plate")
         cv2.imwrite(f'plates/Plate{i}.jpg', plate )
 
     return   plates

@@ -131,8 +131,10 @@ def readPlate(image):
     text=""
     for segment in segments:
         char,score=recognizeChar(segment)
-        if score>0.7 :
+        if score>0.7:
             text+=mapClassToChar(char)+' '
+    if text!="":
+        show_images([plateImage])
     return text[::-1] # reverse String
 
     
