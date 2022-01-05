@@ -1,3 +1,0 @@
-# writing all resources used in our project 
-
-[1] https://www.researchgate.net/publication/224614323_Combining_Hough_transform_and_contour_algorithm_for_detecting_vehicles'_license-plates
