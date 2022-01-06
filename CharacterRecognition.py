@@ -123,7 +123,6 @@ def recognizeChar(img):
     score = score[0][index]
     return predicted,score
 
-i=0
 def readPlate(image):
     plateImage=resizePlate(image)  
     preprocessed=preProcessPlate(plateImage)
@@ -135,7 +134,7 @@ def readPlate(image):
             text+=mapClassToChar(char)+' '
     if text!="":
         show_images([plateImage])
-    return text[::-1] # reverse String
+    return text[::-1]  # reverse String
 
     
     
